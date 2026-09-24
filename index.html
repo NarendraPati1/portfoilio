@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
-    
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -369,6 +366,21 @@
             height: auto;
             overflow: visible;
         }
+
+        .photo.photo-gif {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo.photo-gif img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            image-rendering: pixelated;
+        }
+
 
         .brain-outline {
             fill: none;
@@ -1275,145 +1287,8 @@
                 </section>
 
 
-                <figure class="photo rise" style="--i:3" aria-hidden="true">
-                    <svg class="brain" viewBox="0 0 420 420" role="img">
-                        <!-- cerebrum -->
-                        <path class="brain-outline" d="M186,72
-              C158,60 122,66 108,90
-              C78,86 54,104 50,132
-              C24,138 8,164 18,192
-              C2,212 6,244 32,260
-              C28,282 44,304 70,308
-              C76,330 102,342 128,332
-              C140,352 168,358 190,344
-              C212,360 240,354 250,334
-              C278,340 302,326 306,300
-              C332,296 346,270 332,248
-              C344,218 328,186 296,172
-              C296,142 270,116 234,112
-              C224,86 202,80 186,72 Z" />
-                        <!-- cerebellum -->
-                        <path class="brain-outline brain-cerebellum" d="M244,300
-              C258,288 282,288 296,300
-              C314,308 316,326 302,336
-              C310,350 298,364 278,362
-              C262,366 244,358 238,342
-              C226,332 228,312 244,300 Z" />
-                        <path class="brain-fold" d="M246,312 C264,304 286,306 300,316" />
-                        <path class="brain-fold" d="M242,326 C262,320 284,322 298,332" />
-                        <path class="brain-fold" d="M246,340 C264,336 282,338 292,346" />
-                        <!-- brain stem -->
-                        <path class="brain-outline" d="M232,352 C232,364 236,374 244,382" />
-                        <!-- gyri: long sweeping sulci lines -->
-                        <path class="brain-fold" d="M76,120 C110,100 150,96 182,112 C210,124 232,146 240,172" />
-                        <path class="brain-fold" d="M46,178 C82,160 128,158 164,176 C192,190 210,212 214,238" />
-                        <path class="brain-fold" d="M40,236 C74,222 116,222 150,240 C172,252 186,270 188,290" />
-                        <path class="brain-fold" d="M78,296 C108,286 140,288 164,304" />
-                        <path class="brain-fold" d="M180,108 C206,98 234,104 252,124" />
-                        <path class="brain-fold" d="M228,148 C256,140 282,150 296,172" />
-                        <path class="brain-fold" d="M244,198 C270,192 292,202 304,222" />
-                        <!-- synapse lines -->
-                        <path id="syn1" class="brain-syn" d="M96,132 C130,150 158,168 172,182" />
-                        <path id="syn2" class="brain-syn" d="M64,196 C104,206 142,206 176,222" />
-                        <path id="syn3" class="brain-syn" d="M64,254 C98,244 132,246 160,264" />
-                        <path id="syn4" class="brain-syn" d="M206,110 C214,140 216,166 212,190" />
-                        <path id="syn5" class="brain-syn" d="M254,138 C244,164 234,186 226,206" />
-                        <path id="syn6" class="brain-syn" d="M280,182 C264,204 250,222 234,236" />
-                        <path id="syn7" class="brain-syn" d="M172,182 C196,192 214,192 212,190" />
-                        <path id="syn8" class="brain-syn" d="M148,222 C176,228 200,226 212,222" />
-                        <!-- neurons -->
-                        <g class="brain-neurons">
-                            <circle class="brain-neuron dim n1" cx="96" cy="132" r="2.6" />
-                            <circle class="brain-neuron core n2" cx="172" cy="182" r="3.4" />
-                            <circle class="brain-neuron dim n3" cx="64" cy="196" r="2.6" />
-                            <circle class="brain-neuron dim n4" cx="176" cy="222" r="2.8" />
-                            <circle class="brain-neuron dim n5" cx="64" cy="254" r="2.6" />
-                            <circle class="brain-neuron dim n6" cx="160" cy="264" r="2.6" />
-                            <circle class="brain-neuron core n7" cx="206" cy="110" r="3" />
-                            <circle class="brain-neuron core n8" cx="212" cy="190" r="3.6" />
-                            <circle class="brain-neuron dim n9" cx="254" cy="138" r="2.6" />
-                            <circle class="brain-neuron dim n10" cx="226" cy="206" r="2.6" />
-                            <circle class="brain-neuron dim n11" cx="280" cy="182" r="2.6" />
-                            <circle class="brain-neuron dim n12" cx="234" cy="236" r="2.6" />
-                            <circle class="brain-neuron dim n13" cx="148" cy="222" r="2.6" />
-                        </g>
-                        <!-- traveling pulses along synapses -->
-                        <circle class="brain-pulse" r="2">
-                            <animateMotion dur="3.4s" repeatCount="indefinite" begin="0s">
-                                <mpath href="#syn1" />
-                            </animateMotion>
-                        </circle>
-                        <circle class="brain-pulse" r="2">
-                            <animateMotion dur="3.9s" repeatCount="indefinite" begin=".6s">
-                                <mpath href="#syn2" />
-                            </animateMotion>
-                        </circle>
-                        <circle class="brain-pulse" r="2">
-                            <animateMotion dur="3.7s" repeatCount="indefinite" begin="1.3s">
-                                <mpath href="#syn3" />
-                            </animateMotion>
-                        </circle>
-                        <circle class="brain-pulse" r="2">
-                            <animateMotion dur="3.2s" repeatCount="indefinite" begin=".3s">
-                                <mpath href="#syn4" />
-                            </animateMotion>
-                        </circle>
-                        <circle class="brain-pulse" r="2">
-                            <animateMotion dur="4.2s" repeatCount="indefinite" begin="1.1s">
-                                <mpath href="#syn5" />
-                            </animateMotion>
-                        </circle>
-                        <circle class="brain-pulse" r="2">
-                            <animateMotion dur="3.5s" repeatCount="indefinite" begin="1.7s">
-                                <mpath href="#syn6" />
-                            </animateMotion>
-                        </circle>
-                        <circle class="brain-pulse" r="2">
-                            <animateMotion dur="4.4s" repeatCount="indefinite" begin=".8s">
-                                <mpath href="#syn7" />
-                            </animateMotion>
-                        </circle>
-                        <circle class="brain-pulse" r="2">
-                            <animateMotion dur="3s" repeatCount="indefinite" begin="2.1s">
-                                <mpath href="#syn8" />
-                            </animateMotion>
-                        </circle>
-                        <!-- trailing electrode wires from brainstem -->
-                        <g class="brain-wires">
-                            <path class="wire" id="wire1" d="M200,362 C188,376 178,390 172,404" />
-                            <path class="wire" id="wire2" d="M222,376 C220,392 222,406 228,418" />
-                            <path class="wire" id="wire3" d="M248,378 C256,392 262,404 262,418" />
-                            <path class="wire" id="wire4" d="M270,368 C282,380 292,392 296,406" />
-                        </g>
-                        <circle class="brain-bead" cx="172" cy="404" r="3.6" />
-                        <circle class="brain-bead" cx="228" cy="418" r="3.6" />
-                        <circle class="brain-bead" cx="262" cy="418" r="3.6" />
-                        <circle class="brain-bead" cx="296" cy="406" r="3.6" />
-                        <circle class="brain-pulse wire-pulse" r="1.8">
-                            <animateMotion dur="2.4s" repeatCount="indefinite" begin=".4s" keyPoints="1;0"
-                                keyTimes="0;1">
-                                <mpath href="#wire1" />
-                            </animateMotion>
-                        </circle>
-                        <circle class="brain-pulse wire-pulse" r="1.8">
-                            <animateMotion dur="2.8s" repeatCount="indefinite" begin="1.2s" keyPoints="1;0"
-                                keyTimes="0;1">
-                                <mpath href="#wire2" />
-                            </animateMotion>
-                        </circle>
-                        <circle class="brain-pulse wire-pulse" r="1.8">
-                            <animateMotion dur="2.2s" repeatCount="indefinite" begin=".9s" keyPoints="1;0"
-                                keyTimes="0;1">
-                                <mpath href="#wire3" />
-                            </animateMotion>
-                        </circle>
-                        <circle class="brain-pulse wire-pulse" r="1.8">
-                            <animateMotion dur="3s" repeatCount="indefinite" begin="1.6s" keyPoints="1;0"
-                                keyTimes="0;1">
-                                <mpath href="#wire4" />
-                            </animateMotion>
-                        </circle>
-                    </svg>
+                <figure class="photo photo-gif rise" style="--i:3" aria-hidden="true">
+                    <img src="purrgrammer_full_cat_clean.gif" alt="Animated pixel-art cat typing" />
                 </figure>
             </div>
             <section class="projects" id="projects" aria-label="Projects">
