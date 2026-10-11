@@ -616,7 +616,12 @@
         }
 
         .controls {
-            display: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 12px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--line);
         }
 
         .controls-old {
@@ -1298,7 +1303,7 @@
                 </div>
                 <div>
                     <div class="controls">
-                        <span class="count" id="count" hidden>01 / 06</span>
+                        <span class="count" id="count" ></span>
                         <button class="arrow" id="prev" type="button" hidden aria-label="Previous project"><svg
                                 viewBox="0 0 18 18">
                                 <path d="M15 9H3M8 4L3 9l5 5" />
